@@ -429,8 +429,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6b0-en-wTV">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6b0-en-wTV">
+                                <rect key="frame" x="-48" y="0.0" width="472" height="818"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1s-RA-f6G">
                                 <rect key="frame" x="0.0" y="-2" width="667" height="110"/>
@@ -916,7 +916,7 @@
                             <constraint firstItem="YwH-uY-bAJ" firstAttribute="leading" secondItem="APE-su-pna" secondAttribute="trailing" id="IMR-lQ-MSH"/>
                             <constraint firstItem="Bjl-IH-RYx" firstAttribute="leading" secondItem="FPp-Gd-5Z8" secondAttribute="trailing" id="IPj-Z7-ben"/>
                             <constraint firstItem="ADX-bJ-N9I" firstAttribute="leading" secondItem="k1D-0g-QYV" secondAttribute="leadingMargin" constant="-20" id="JbH-Jb-xuo"/>
-                            <constraint firstItem="6b0-en-wTV" firstAttribute="leading" secondItem="f88-rd-HId" secondAttribute="leading" id="Jqg-ym-NO3"/>
+                            <constraint firstItem="6b0-en-wTV" firstAttribute="leading" secondItem="f88-rd-HId" secondAttribute="leading" constant="-44" id="Jqg-ym-NO3"/>
                             <constraint firstItem="Ikc-67-LEx" firstAttribute="leading" secondItem="Y73-nN-k7L" secondAttribute="trailing" id="Kma-na-afb"/>
                             <constraint firstItem="WGY-Md-p6K" firstAttribute="leading" secondItem="MEZ-ob-r78" secondAttribute="trailing" id="LTF-HV-kJO"/>
                             <constraint firstItem="APE-su-pna" firstAttribute="top" secondItem="Bjl-IH-RYx" secondAttribute="bottom" id="M4g-g6-G2e"/>
@@ -932,7 +932,7 @@
                             <constraint firstItem="KEA-RV-zP0" firstAttribute="top" secondItem="f88-rd-HId" secondAttribute="bottom" id="Pd3-HJ-1XG"/>
                             <constraint firstItem="Ml2-Vy-hBv" firstAttribute="height" secondItem="ADX-bJ-N9I" secondAttribute="height" id="Pe8-ew-6by"/>
                             <constraint firstItem="2Om-ha-9Dy" firstAttribute="leading" secondItem="zfT-Ou-yGx" secondAttribute="trailing" id="QZ3-Cq-WUW"/>
-                            <constraint firstItem="6b0-en-wTV" firstAttribute="trailing" secondItem="H9Z-jw-4w4" secondAttribute="trailing" id="Qh0-uF-KHA"/>
+                            <constraint firstItem="6b0-en-wTV" firstAttribute="trailing" secondItem="H9Z-jw-4w4" secondAttribute="trailing" constant="45" id="Qh0-uF-KHA"/>
                             <constraint firstItem="WGY-Md-p6K" firstAttribute="top" secondItem="tif-ci-zjL" secondAttribute="bottom" id="R0G-XI-Nm3"/>
                             <constraint firstItem="FPp-Gd-5Z8" firstAttribute="height" secondItem="ADX-bJ-N9I" secondAttribute="height" id="RCY-Pp-emY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H9Z-jw-4w4" secondAttribute="trailing" constant="-20" id="RDX-bW-6oR"/>
@@ -949,7 +949,7 @@
                             <constraint firstItem="LaI-KN-HbR" firstAttribute="width" secondItem="ADX-bJ-N9I" secondAttribute="width" id="WHg-62-sHt"/>
                             <constraint firstItem="2Om-ha-9Dy" firstAttribute="height" secondItem="ADX-bJ-N9I" secondAttribute="height" id="X5c-Zm-vIc"/>
                             <constraint firstItem="Ikc-67-LEx" firstAttribute="top" secondItem="CDe-XU-Uah" secondAttribute="bottom" id="XLe-qF-YiY"/>
-                            <constraint firstItem="6b0-en-wTV" firstAttribute="bottom" secondItem="KEA-RV-zP0" secondAttribute="top" id="XW8-vt-i8k"/>
+                            <constraint firstItem="6b0-en-wTV" firstAttribute="bottom" secondItem="k1D-0g-QYV" secondAttribute="bottom" constant="6" id="XW8-vt-i8k"/>
                             <constraint firstItem="f88-rd-HId" firstAttribute="height" secondItem="ADX-bJ-N9I" secondAttribute="height" id="XXA-GX-THU"/>
                             <constraint firstItem="hWd-t2-2YC" firstAttribute="top" secondItem="BaW-aF-LoW" secondAttribute="top" id="Y1k-Be-u9N"/>
                             <constraint firstItem="rbm-Wl-53g" firstAttribute="height" secondItem="ADX-bJ-N9I" secondAttribute="height" id="Y3U-2S-0o8"/>
@@ -1079,7 +1079,7 @@
                     </connections>
                 </screenEdgePanGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="131.5" y="1295.5"/>
+            <point key="canvasLocation" x="130.40000000000001" y="1295.3201970443349"/>
         </scene>
         <!--Tips-->
         <scene sceneID="IZM-RW-jIH">
@@ -1102,6 +1102,6 @@
         <image name="Services" width="17" height="17"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tkc-QQ-DAj"/>
+        <segue reference="iSe-AD-WAq"/>
     </inferredMetricsTieBreakers>
 </document>

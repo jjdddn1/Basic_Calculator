@@ -100,7 +100,7 @@ class ViewControllerL: UIViewController, CalculationHistoryViewControllerDelegat
             return
         }
 
-        var length = display.text!.characters.count
+        var length = display.text!.count
 
         //if swipe when calculation ended, clean up the user input label and start a new round
         if(finishedCalculation == true) {
@@ -116,20 +116,20 @@ class ViewControllerL: UIViewController, CalculationHistoryViewControllerDelegat
             // check the edge situation
             if(display.text![endIndex] == ".") {
                 dupDot = false; // if gonna remove dot
-            } else if(display.text![display.text!.characters.index(endIndex, offsetBy: -1)] == "E") {
+            } else if(display.text![display.text!.index(endIndex, offsetBy: -1)] == "E") {
                 length = length - 1
-                calculatingLabel.text = calculatingLabel.text?.substring(to: calculatingLabel.text!.characters.index(calculatingLabel.text!.endIndex, offsetBy: -1))
-            } else if(display.text![display.text!.characters.index(endIndex, offsetBy: -1)] == "-" && length > 2 && display.text![display.text!.characters.index(endIndex, offsetBy: -2)] == "E") {
+                calculatingLabel.text = String(calculatingLabel.text![..<calculatingLabel.text!.index(calculatingLabel.text!.endIndex, offsetBy: -1)])
+            } else if(display.text![display.text!.index(endIndex, offsetBy: -1)] == "-" && length > 2 && display.text![display.text!.index(endIndex, offsetBy: -2)] == "E") {
                 length = length - 2
-                calculatingLabel.text = calculatingLabel.text?.substring(to: calculatingLabel.text!.characters.index(calculatingLabel.text!.endIndex, offsetBy: -2))
-            } else if(calculatingLabel.text!.substring(from: calculatingLabel.text!.characters.index(calculatingLabel.text!.endIndex, offsetBy: -1)) == ")") {
+                calculatingLabel.text = String(calculatingLabel.text![..<calculatingLabel.text!.index(calculatingLabel.text!.endIndex, offsetBy: -2)])
+            } else if(String(calculatingLabel.text![calculatingLabel.text!.index(calculatingLabel.text!.endIndex, offsetBy: -1)]) == ")") {
                 calculatingLabel.text = brain.removeLastNumber(calculatingLabel.text!).0 + display.text!.replacingOccurrences(of: ",", with: "", options: NSString.CompareOptions.literal, range: nil)
 
             }
 
             // remove one digit
             let tmpText = (display.text! as NSString).substring(to: length - 1)
-            calculatingLabel.text = calculatingLabel.text?.substring(to: calculatingLabel.text!.characters.index(calculatingLabel.text!.endIndex, offsetBy: -1))
+            calculatingLabel.text = String(calculatingLabel.text![..<calculatingLabel.text!.index(calculatingLabel.text!.endIndex, offsetBy: -1)])
 
             //reset the format
             if tmpText.contains(".") == false && tmpText.contains(",") {
