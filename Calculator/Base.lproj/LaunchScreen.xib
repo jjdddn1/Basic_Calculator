@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Whz-QK-1sj">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nao-1X-Jry">
+                    <rect key="frame" x="55" y="237" width="210" height="94"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="94" id="I1k-Sv-NdD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.39745592948717945" green="0.39745592948717945" blue="0.39745592948717945" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nao-1X-Jry" firstAttribute="leading" secondItem="Whz-QK-1sj" secondAttribute="leading" constant="55" id="2AY-gf-rzb"/>
+                <constraint firstItem="nao-1X-Jry" firstAttribute="centerX" secondItem="Whz-QK-1sj" secondAttribute="centerX" id="K2x-k3-8Bd"/>
+                <constraint firstItem="nao-1X-Jry" firstAttribute="centerY" secondItem="Whz-QK-1sj" secondAttribute="centerY" id="kyz-Pv-h1w"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="689" y="610"/>
+        </view>
+    </objects>
+</document>

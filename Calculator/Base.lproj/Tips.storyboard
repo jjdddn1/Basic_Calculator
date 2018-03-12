@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DpO-yR-Tkx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tips View Controller-->
+        <scene sceneID="MEu-x9-wsL">
+            <objects>
+                <viewController id="DpO-yR-Tkx" customClass="TipsViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8w6-bR-wwR"/>
+                        <viewControllerLayoutGuide type="bottom" id="WtA-HK-MZK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MjU-TX-e0a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9j-K4-Y5w">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdT-nY-lYg">
+                                        <rect key="frame" x="170" y="37" width="44" height="25"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.7992456896551724" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HdT-nY-lYg" firstAttribute="centerX" secondItem="h9j-K4-Y5w" secondAttribute="centerX" id="DfD-du-6ew"/>
+                                    <constraint firstAttribute="height" constant="70" id="eYL-mf-aDl"/>
+                                    <constraint firstAttribute="bottom" secondItem="HdT-nY-lYg" secondAttribute="bottom" constant="8" id="kjg-BE-nMg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TU-CT-VDG" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="100" width="339" height="91"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521552413794" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Button1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhj-by-6CP" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="206" width="339" height="92"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521552413794" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Button1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdU-2n-Nae" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="313" width="339" height="91"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521552413794" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Button1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfb-5R-Vlv" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="419" width="339" height="92"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521552413794" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Button1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHb-Hc-YBr" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="526" width="339" height="91"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521552413794" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Button1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzW-6T-vSu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="DpO-yR-Tkx" eventType="touchUpInside" id="twk-S7-EEc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39948814659999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mhj-by-6CP" firstAttribute="leading" secondItem="9TU-CT-VDG" secondAttribute="leading" id="5qW-4N-7xh"/>
+                            <constraint firstItem="qfb-5R-Vlv" firstAttribute="top" secondItem="MdU-2n-Nae" secondAttribute="bottom" constant="15" id="7Dg-wQ-uQw"/>
+                            <constraint firstItem="MdU-2n-Nae" firstAttribute="height" secondItem="9TU-CT-VDG" secondAttribute="height" id="Agb-Vr-4nU"/>
+                            <constraint firstItem="OHb-Hc-YBr" firstAttribute="height" secondItem="9TU-CT-VDG" secondAttribute="height" id="AuC-qc-J5q"/>
+                            <constraint firstItem="Mhj-by-6CP" firstAttribute="top" secondItem="9TU-CT-VDG" secondAttribute="bottom" constant="15" id="Fir-Ba-KJL"/>
+                            <constraint firstItem="OHb-Hc-YBr" firstAttribute="trailing" secondItem="9TU-CT-VDG" secondAttribute="trailing" id="GdB-qc-lcK"/>
+                            <constraint firstItem="qfb-5R-Vlv" firstAttribute="height" secondItem="9TU-CT-VDG" secondAttribute="height" id="J33-kM-yTz"/>
+                            <constraint firstItem="OHb-Hc-YBr" firstAttribute="leading" secondItem="9TU-CT-VDG" secondAttribute="leading" id="MAm-SO-og3"/>
+                            <constraint firstItem="h9j-K4-Y5w" firstAttribute="top" secondItem="8w6-bR-wwR" secondAttribute="bottom" constant="-20" id="OJk-Ru-SEu"/>
+                            <constraint firstItem="qfb-5R-Vlv" firstAttribute="trailing" secondItem="9TU-CT-VDG" secondAttribute="trailing" id="QOu-0N-BfR"/>
+                            <constraint firstItem="Mhj-by-6CP" firstAttribute="height" secondItem="9TU-CT-VDG" secondAttribute="height" id="XFM-ew-GvL"/>
+                            <constraint firstItem="OHb-Hc-YBr" firstAttribute="top" secondItem="qfb-5R-Vlv" secondAttribute="bottom" constant="15" id="Z1H-cf-d9d"/>
+                            <constraint firstItem="QzW-6T-vSu" firstAttribute="centerY" secondItem="MjU-TX-e0a" secondAttribute="centerY" id="ZQJ-P8-d5t"/>
+                            <constraint firstItem="MdU-2n-Nae" firstAttribute="top" secondItem="Mhj-by-6CP" secondAttribute="bottom" constant="15" id="bnN-oN-4Zb"/>
+                            <constraint firstItem="9TU-CT-VDG" firstAttribute="top" secondItem="h9j-K4-Y5w" secondAttribute="bottom" constant="30" id="gIM-Xb-gSX"/>
+                            <constraint firstItem="MdU-2n-Nae" firstAttribute="leading" secondItem="9TU-CT-VDG" secondAttribute="leading" id="gd5-oA-twX"/>
+                            <constraint firstItem="qfb-5R-Vlv" firstAttribute="leading" secondItem="9TU-CT-VDG" secondAttribute="leading" id="hGc-ef-mVk"/>
+                            <constraint firstItem="QzW-6T-vSu" firstAttribute="width" secondItem="MjU-TX-e0a" secondAttribute="width" id="lzF-x7-qOy"/>
+                            <constraint firstItem="9TU-CT-VDG" firstAttribute="leading" secondItem="MjU-TX-e0a" secondAttribute="leadingMargin" constant="2" id="mvY-0C-4Wo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9TU-CT-VDG" secondAttribute="trailing" constant="2" id="nq4-12-Qbm"/>
+                            <constraint firstItem="Mhj-by-6CP" firstAttribute="trailing" secondItem="9TU-CT-VDG" secondAttribute="trailing" id="pic-td-Dfv"/>
+                            <constraint firstItem="h9j-K4-Y5w" firstAttribute="leading" secondItem="MjU-TX-e0a" secondAttribute="leadingMargin" constant="-20" id="qQ9-Vc-iTS"/>
+                            <constraint firstItem="WtA-HK-MZK" firstAttribute="top" secondItem="OHb-Hc-YBr" secondAttribute="bottom" constant="50" id="rzY-fb-0Kl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h9j-K4-Y5w" secondAttribute="trailing" constant="-20" id="uqy-td-Hak"/>
+                            <constraint firstItem="MdU-2n-Nae" firstAttribute="trailing" secondItem="9TU-CT-VDG" secondAttribute="trailing" id="wQE-Kd-FsE"/>
+                            <constraint firstItem="QzW-6T-vSu" firstAttribute="height" secondItem="MjU-TX-e0a" secondAttribute="height" id="wqA-ME-Wvs"/>
+                            <constraint firstItem="QzW-6T-vSu" firstAttribute="centerX" secondItem="MjU-TX-e0a" secondAttribute="centerX" id="y6J-yi-P4z"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outletCollection property="TipButtons" destination="9TU-CT-VDG" collectionClass="NSMutableArray" id="Xw4-iO-Bud"/>
+                        <outletCollection property="TipButtons" destination="Mhj-by-6CP" collectionClass="NSMutableArray" id="1zI-xL-WBM"/>
+                        <outletCollection property="TipButtons" destination="MdU-2n-Nae" collectionClass="NSMutableArray" id="JN6-KM-p8H"/>
+                        <outletCollection property="TipButtons" destination="qfb-5R-Vlv" collectionClass="NSMutableArray" id="pJ2-UY-xt1"/>
+                        <outletCollection property="TipButtons" destination="OHb-Hc-YBr" collectionClass="NSMutableArray" id="gj5-sQ-I5v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gd5-6a-jRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-351.5" y="556.5"/>
+        </scene>
+    </scenes>
+</document>

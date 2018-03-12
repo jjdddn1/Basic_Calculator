@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I7X-79-Izf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculation History View Controller-->
+        <scene sceneID="HqO-HE-Qfe">
+            <objects>
+                <viewController id="I7X-79-Izf" customClass="CalculationHistoryViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rnd-R8-FWq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qD2-tg-Qnu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BUY-FQ-FbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3E-gB-pYB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Histories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI3-lk-R4Z">
+                                        <rect key="frame" x="141" y="37" width="94" height="25"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.79924568969999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yI3-lk-R4Z" firstAttribute="top" secondItem="R3E-gB-pYB" secondAttribute="top" constant="37" id="5uU-dS-k38"/>
+                                    <constraint firstItem="yI3-lk-R4Z" firstAttribute="centerX" secondItem="R3E-gB-pYB" secondAttribute="centerX" id="PdV-x9-nd8"/>
+                                    <constraint firstItem="yI3-lk-R4Z" firstAttribute="bottom" secondItem="R3E-gB-pYB" secondAttribute="bottomMargin" id="UhN-Dj-1qQ"/>
+                                    <constraint firstAttribute="height" constant="70" id="umC-u3-WTc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eK-4M-gDZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="I7X-79-Izf" eventType="touchUpInside" id="EGY-gg-Muz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-Ys-Rwz" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="100" width="339" height="91"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521550000003" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="&lt; Empty &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="historyButtonTapped:" destination="I7X-79-Izf" eventType="touchUpInside" id="OLH-hv-eCh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA0-U4-2sa" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="313" width="339" height="91"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521550000003" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="&lt; Empty &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="historyButtonTapped:" destination="I7X-79-Izf" eventType="touchUpInside" id="iJh-rj-z5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUC-bQ-aEL" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="419" width="339" height="92"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521550000003" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="&lt; Empty &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="historyButtonTapped:" destination="I7X-79-Izf" eventType="touchUpInside" id="QxB-D8-6cP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjN-Qu-jRA" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="526" width="339" height="91"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521550000003" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="&lt; Empty &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="historyButtonTapped:" destination="I7X-79-Izf" eventType="touchUpInside" id="auc-ll-dH2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaJ-SU-C7q" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="18" y="206" width="339" height="92"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70347521550000003" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="&lt; Empty &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeLeft"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="historyButtonTapped:" destination="I7X-79-Izf" eventType="touchUpInside" id="8AB-9s-Xne"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39948814659999998" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vaJ-SU-C7q" firstAttribute="height" secondItem="G9f-Ys-Rwz" secondAttribute="height" id="3o2-fv-53b"/>
+                            <constraint firstItem="aUC-bQ-aEL" firstAttribute="leading" secondItem="cjN-Qu-jRA" secondAttribute="leading" id="5KU-GH-jmP"/>
+                            <constraint firstItem="BA0-U4-2sa" firstAttribute="height" secondItem="G9f-Ys-Rwz" secondAttribute="height" id="7aL-y3-VAz"/>
+                            <constraint firstItem="G9f-Ys-Rwz" firstAttribute="top" secondItem="R3E-gB-pYB" secondAttribute="bottom" constant="30" id="9Sb-SI-2Vv"/>
+                            <constraint firstItem="vaJ-SU-C7q" firstAttribute="top" secondItem="G9f-Ys-Rwz" secondAttribute="bottom" constant="15" id="9Z1-HL-7RX"/>
+                            <constraint firstItem="aUC-bQ-aEL" firstAttribute="top" secondItem="BA0-U4-2sa" secondAttribute="bottom" constant="15" id="ELU-vc-24Y"/>
+                            <constraint firstItem="R3E-gB-pYB" firstAttribute="leading" secondItem="6eK-4M-gDZ" secondAttribute="leading" id="FdE-ya-sit"/>
+                            <constraint firstItem="R3E-gB-pYB" firstAttribute="centerX" secondItem="G9f-Ys-Rwz" secondAttribute="centerX" id="Ftg-ff-cfO"/>
+                            <constraint firstItem="cjN-Qu-jRA" firstAttribute="height" secondItem="G9f-Ys-Rwz" secondAttribute="height" id="M1R-ML-7wI"/>
+                            <constraint firstItem="R3E-gB-pYB" firstAttribute="trailing" secondItem="6eK-4M-gDZ" secondAttribute="trailing" id="MA7-Kr-xak"/>
+                            <constraint firstItem="R3E-gB-pYB" firstAttribute="top" secondItem="6eK-4M-gDZ" secondAttribute="top" id="OJL-1A-q2j"/>
+                            <constraint firstItem="vaJ-SU-C7q" firstAttribute="leading" secondItem="BA0-U4-2sa" secondAttribute="leading" id="PAv-9X-VVT"/>
+                            <constraint firstItem="cjN-Qu-jRA" firstAttribute="top" secondItem="aUC-bQ-aEL" secondAttribute="bottom" constant="15" id="TzC-aB-RW9"/>
+                            <constraint firstItem="G9f-Ys-Rwz" firstAttribute="leading" secondItem="vaJ-SU-C7q" secondAttribute="leading" id="UCe-oc-hvc"/>
+                            <constraint firstItem="6eK-4M-gDZ" firstAttribute="top" secondItem="BUY-FQ-FbQ" secondAttribute="top" id="aHL-2j-uP4"/>
+                            <constraint firstItem="G9f-Ys-Rwz" firstAttribute="leading" secondItem="BUY-FQ-FbQ" secondAttribute="leadingMargin" constant="2" id="cUQ-bb-BFw"/>
+                            <constraint firstItem="BA0-U4-2sa" firstAttribute="top" secondItem="vaJ-SU-C7q" secondAttribute="bottom" constant="15" id="cos-Ep-tcf"/>
+                            <constraint firstItem="G9f-Ys-Rwz" firstAttribute="trailing" secondItem="vaJ-SU-C7q" secondAttribute="trailing" id="dGJ-1X-qTK"/>
+                            <constraint firstItem="aUC-bQ-aEL" firstAttribute="height" secondItem="G9f-Ys-Rwz" secondAttribute="height" id="efX-uv-U8O"/>
+                            <constraint firstItem="6eK-4M-gDZ" firstAttribute="leading" secondItem="BUY-FQ-FbQ" secondAttribute="leading" id="iGZ-Hw-ptZ"/>
+                            <constraint firstItem="aUC-bQ-aEL" firstAttribute="trailing" secondItem="cjN-Qu-jRA" secondAttribute="trailing" id="lVd-Sz-YoI"/>
+                            <constraint firstItem="BA0-U4-2sa" firstAttribute="trailing" secondItem="aUC-bQ-aEL" secondAttribute="trailing" id="mV9-1C-YmC"/>
+                            <constraint firstItem="vaJ-SU-C7q" firstAttribute="trailing" secondItem="BA0-U4-2sa" secondAttribute="trailing" id="moz-Og-tTk"/>
+                            <constraint firstAttribute="trailing" secondItem="6eK-4M-gDZ" secondAttribute="trailing" id="na9-4i-MZM"/>
+                            <constraint firstItem="6eK-4M-gDZ" firstAttribute="bottom" secondItem="qD2-tg-Qnu" secondAttribute="top" id="nfQ-k0-VZX"/>
+                            <constraint firstItem="qD2-tg-Qnu" firstAttribute="top" secondItem="cjN-Qu-jRA" secondAttribute="bottom" constant="50" id="oUd-QM-mPw"/>
+                            <constraint firstItem="BA0-U4-2sa" firstAttribute="leading" secondItem="aUC-bQ-aEL" secondAttribute="leading" id="uDl-Y6-yTC"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outletCollection property="historyButtons" destination="G9f-Ys-Rwz" collectionClass="NSMutableArray" id="JTE-Xo-bv8"/>
+                        <outletCollection property="historyButtons" destination="vaJ-SU-C7q" collectionClass="NSMutableArray" id="Oe0-RP-BJ8"/>
+                        <outletCollection property="historyButtons" destination="BA0-U4-2sa" collectionClass="NSMutableArray" id="0d3-0t-ugP"/>
+                        <outletCollection property="historyButtons" destination="aUC-bQ-aEL" collectionClass="NSMutableArray" id="z1Z-uR-gjf"/>
+                        <outletCollection property="historyButtons" destination="cjN-Qu-jRA" collectionClass="NSMutableArray" id="GoH-GA-4nQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNg-nJ-shO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="535"/>
+        </scene>
+    </scenes>
+</document>
